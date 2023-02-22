@@ -13,52 +13,71 @@ const KeyPad = ({
 }: KeyProps) => {
   return (
     <div className="btn-wrapper">
-      <Button className="btn equal" onClick={clearAll}>
+      <Button className="btn equal" id="clear" onClick={clearAll}>
         Clear
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("1")}>
+      <Button className="btn equal" id="one" onClick={() => handleNumber("1")}>
         1
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("2")}>
+      <Button className="btn equal" id="two" onClick={() => handleNumber("2")}>
         2
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("3")}>
+      <Button
+        className="btn equal"
+        id="three"
+        onClick={() => handleNumber("3")}
+      >
         3
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("4")}>
+      <Button className="btn equal" id="four" onClick={() => handleNumber("4")}>
         4
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("5")}>
+      <Button className="btn equal" id="five" onClick={() => handleNumber("5")}>
         5
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("6")}>
+      <Button className="btn equal" id="six" onClick={() => handleNumber("6")}>
         6
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("7")}>
+      <Button
+        className="btn equal"
+        id="seven"
+        onClick={() => handleNumber("7")}
+      >
         7
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("8")}>
+      <Button
+        className="btn equal"
+        id="eight"
+        onClick={() => handleNumber("8")}
+      >
         8
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("9")}>
+      <Button className="btn equal" id="nine" onClick={() => handleNumber("9")}>
         9
       </Button>
-      <Button className="btn equal" onClick={() => handleNumber("0")}>
+      <Button className="btn equal" id="zero" onClick={() => handleNumber("0")}>
         0
       </Button>
-      <Button className="btn equal" onClick={() => handleAction("+")}>
+      <Button
+        className="btn equal"
+        id="decimal"
+        onClick={() => handleNumber(".")}
+      >
+        .
+      </Button>
+      <Button className="btn equal" id="add" onClick={() => handleAction("+")}>
         +
       </Button>
-      <Button className="btn" onClick={() => handleAction("-")}>
+      <Button className="btn" id="subtract" onClick={() => handleAction("-")}>
         -
       </Button>
-      <Button className="btn" onClick={() => handleAction("*")}>
+      <Button className="btn" id="multiply" onClick={() => handleAction("*")}>
         x
       </Button>
-      <Button className="btn" onClick={() => handleAction("/")}>
+      <Button className="btn" id="divide" onClick={() => handleAction("/")}>
         /
       </Button>
-      <Button className="btn equal" onClick={handleResult}>
+      <Button className="btn equal" id="equals" onClick={handleResult}>
         =
       </Button>
     </div>
